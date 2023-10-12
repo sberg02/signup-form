@@ -1,12 +1,72 @@
 :root {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 62.5%;
-    width: 100%;
     height: 100%;
+    --heading-size: 8.4rem;
+    --credit-size: 1.2rem;
+    --body-size: 2.8rem;
 }
 
 @font-face {
     font-family: norse; src: url(Norse-Bold.otf);
 }
+
+body {
+    display: flex;
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 35%;
+    color: white;
+    font-family: norse;
+    background: url(images/plants.jpg);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 35%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+}
+
+.left-panel span {
+    font-size: var(--heading-size);
+    margin-left: 10px;
+}
+
+footer{
+    font-size: var(--credit-size);
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    font-size: var(--body-size);
+}
+
+.intro {
+    padding: 10%;
+}
+
+.intro, .btn-area {
+    background: rgb(241, 241, 241);
+}
+
+label {
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+

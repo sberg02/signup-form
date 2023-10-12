@@ -8,16 +8,41 @@
 </head>
 <body>
     <div class="left-panel">
-
+        <div class="logo">
+            <img src="images/odin-lined.png" alt="odin-logo" height="150px" width="100px">
+            <span>Odin</span>
+        </div>
+        <footer>Photo by Halie West on Unsplash</footer>
     </div>
     <div class="right-panel">
         <div class="intro">
-
+            <span>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.
+            </span>
         </div>
-        <form action="">
-
-        </form>
-        <div class="submit"></div>
+        <table>
+            <form id="signup" method="POST" action="mailto:sam.berg2@gmail.com" enctype="text/plain">
+                <legend>Let's do this</legend>
+                <tr><td><label for="fname">First Name:</label>
+                <input type="text" name="name" id="fname" size="30"></td>
+                <td><label for="lname">Last Name:</label>
+                <input type="text" name="name" id="lname" size="30"></td>
+                <tr><td><label for="email">Email:</label>
+                <input type="email" name="email" id="email" size="30"></td>
+                <td><label for="phone">Phone Number:</label>
+                <input type="text" name="phone" id="phone" size="15" maxlength="11" minlength="10"></td></tr>
+                <tr><td><label for="pw">Password:</label>
+                <input type="password" name="pw" id="pw" size="20"></td>
+                <td><label for="conf-pw">Confirm Password:</label>
+                <input type="password" name="pw" id="conf-pw" size="20"></td></tr>
+            </form>
+        </table>
+        <div class="btn-area">
+            <button type="submit" form="signup">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+            
+        
     </div>
 </body>
 </html>
