@@ -4,7 +4,7 @@
     padding: 0;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 62.5%;
-    height: 100%;
+    min-height: 100%;
     --heading-size: 8.4rem;
     --credit-size: 1.2rem;
     --body-size: 2.8rem;
@@ -16,6 +16,7 @@
 
 body {
     display: flex;
+    margin: 0;
 }
 
 .left-panel {
@@ -23,11 +24,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
     width: 35%;
     color: white;
     font-family: norse;
-    background: url(images/plants.jpg);
+    background-image: url(images/plants.jpg);
+    background-size: 500px;
 }
 
 .logo {
@@ -52,7 +53,7 @@ footer{
 .right-panel {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     height: 100%;
     font-size: var(--body-size);
 }
@@ -65,8 +66,34 @@ footer{
     background: rgb(241, 241, 241);
 }
 
-label {
-    padding: 2rem;
+label, button {
     font-size: 1.4rem;
+}
+
+label, input {
+    display: block;
+}
+
+table {
+    padding-bottom: 15px;
+    width: 60%;
+}
+
+td {
+    padding: 5px 20px;
+    letter-spacing: 0.2rem;
+}
+
+button {
+    margin: 2% 0 0 5%;
+    padding: 15px 35px;
+    background: rgb(11, 113, 11);
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.table-wrapper{
+    box-shadow: 0 4px 2px -2px gray;
 }
 
