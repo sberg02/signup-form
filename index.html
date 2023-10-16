@@ -22,30 +22,28 @@
             </span>
         </div>
         <div class="table-wrapper">
-        <table>
-            <form id="signup" method="POST" action="mailto:sam.berg2@gmail.com" enctype="text/plain">
-                <legend style="margin: 15px 0 10px 20px">Let's do this!</legend>
-                <tr><td><label for="fname">FIRST NAME</label>
-                <input type="text" name="name" id="fname" size="30"></td>
-                <td><label for="lname">LAST NAME</label>
-                <input type="text" name="name" id="lname" size="30"></td>
-                <tr><td><label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" size="30"></td>
-                <td><label for="phone">PHONE NUMBER</label>
-                <input type="text" name="phone" id="phone" size="30" maxlength="11" minlength="10"></td></tr>
-                <tr><td><label for="pw">PASSWORD</label>
-                <input type="password" name="pw" id="pw" size="30"></td>
-                <td><label for="conf-pw">CONFIRM PASSWORD</label>
-                <input type="password" name="pw" id="conf-pw" size="30"></td></tr>
-            </form>
-        </table>
+            <table>
+                <form id="signup" method="POST" action="mailto:sam.berg2@gmail.com" enctype="text/plain">
+                    <legend style="margin: 15px 0 10px 4%">Let's do this!</legend>
+                    <tr><td><label for="fname">FIRST NAME</label>
+                    <input type="text" name="name" id="fname" size="30" required></td>
+                    <td><label for="lname">LAST NAME</label>
+                    <input type="text" name="name" id="lname" size="30" required></td>
+                    <tr><td><label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" size="30" required></td>
+                    <td><label for="phone">PHONE NUMBER</label>
+                    <input type="text" name="phone" id="phone" size="30" maxlength="11" minlength="10" required></td></tr>
+                    <tr><td><label for="pw">PASSWORD</label>
+                    <input class="pass" type="password" name="pw1" id="pw" size="30" required></td>
+                    <td><label for="conf-pw">CONFIRM PASSWORD</label>
+                    <input class="pass" type="password" name="pw2" id="conf-pw" size="30" required></td></tr>
+                </form>
+            </table>
         </div>
         <div class="btn-area">
-            <button type="submit" form="signup">Create Account</button>
+            <button id="submit" type="submit" form="signup">Create Account</button>
             <p style="margin-left: 5%;">Already have an account? <a href="#">Log in</a></p>
         </div>
-            
-        
     </div>
 </body>
 </html>

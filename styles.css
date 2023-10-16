@@ -28,7 +28,7 @@ body {
     color: white;
     font-family: norse;
     background-image: url(images/plants.jpg);
-    background-size: 500px;
+    background-size: 550px;
 }
 
 .logo {
@@ -59,41 +59,61 @@ footer{
 }
 
 .intro {
-    padding: 10%;
+    padding: 10% 10% 5% 10%; 
 }
 
 .intro, .btn-area {
     background: rgb(241, 241, 241);
 }
 
-label, button {
+label, button, input {
     font-size: 1.4rem;
 }
 
 label, input {
     display: block;
+    border-radius: 5px;
+}
+
+label {
+    margin-bottom: 3px;
 }
 
 table {
     padding-bottom: 15px;
     width: 60%;
+    margin-left: 2%;
 }
 
 td {
     padding: 5px 20px;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
 
 button {
     margin: 2% 0 0 5%;
     padding: 15px 35px;
-    background: rgb(11, 113, 11);
+    background: #596D48;
     color: white;
     border: 1px solid black;
     border-radius: 10px;
 }
 
-.table-wrapper{
-    box-shadow: 0 4px 2px -2px gray;
+.btn-area{
+    padding-top: 30px;
+    box-shadow: inset 0px 5px 9px 1px #ADACAF;
 }
 
+input {
+    height: 25px;
+}
+
+input:focus {
+    border-color: #4c4cff;
+    box-shadow: 1px 1px 5px 0px grey;
+}
+
+.error {
+    border-color: #FF0004;
+    box-shadow: 0px 0px 3px 1px #FF0004;
+}

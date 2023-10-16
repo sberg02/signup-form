@@ -1,11 +1,17 @@
-const btnSelect = document.querySelector('button');
-btnSelect.addEventListener('click', pwCheck);
+//commenting out javascript for now. will revisit.
 
-function pwCheck (pw1, pw2) {
-    if (pw1===pw2) {
-        
+/*const btnSelect = document.querySelector('.pass');
+btnSelect.addEventListener('keydown', pwCheck);
+
+function pwCheck () {
+    let inputSelect = document.querySelector('.pass');
+    let pass1 = document.getElementById('pw').value;
+    let pass2 = document.getElementById('conf-pw').value;
+    if (pass1 != pass2) {
+        inputSelect.classList.add('.error');
     }
     else {
-        alert("Passwords do not match!");
+        return;
     }
-}
+};*/
+
